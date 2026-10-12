@@ -120,7 +120,10 @@
       <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80" alt="Frutas saludables">  
         <h3>🍎 Come frutas</h3>
         <p>Incluye diferentes frutas durante la semana para obtener vitaminas, minerales y fibra.</p>
-        <a href="#consejos" class="boton-tarjeta">💚 Ver consejos</a>
+        
+        <button class="boton-tarjeta" onclick="abrirVentana('frutas')">
+    💚 Ver consejos
+</button>
         <a href="#reto" class="boton">Quiero intentarlo</a>
     </div>
 
@@ -269,7 +272,6 @@ function respuestaIncorrecta() {
         <a href="#alimentacion" class="boton">🍎 Comenzar</a>
     </div>
 </header>
-</html> 
 <section class="quiz" id="quiz">
     <h2>🧠 ¿Cuánto sabes sobre alimentación saludable?</h2>
     <p>Responde la pregunta y descubre si elegiste correctamente.</p>
@@ -449,3 +451,54 @@ function respuestaIncorrecta() {
 
     </div>
 </section>   
+    <!-- VENTANA DE FRUTAS -->
+<div id="ventana-frutas" class="ventana">
+    <div class="contenido-ventana">
+
+        <button class="cerrar-ventana" onclick="cerrarVentana('frutas')">
+            ✕
+        </button>
+
+        <h2>🍎 ¡Más sobre las frutas!</h2>
+
+        <p>
+            Las frutas son importantes porque aportan nutrientes
+            que forman parte de una alimentación variada.
+        </p>
+
+        <div class="info-frutas">
+            <p>🍊 <strong>Vitaminas:</strong> ayudan al funcionamiento del organismo.</p>
+            <p>🌱 <strong>Fibra:</strong> forma parte de una alimentación saludable.</p>
+            <p>💧 <strong>Agua:</strong> muchas frutas contienen bastante agua.</p>
+            <p>🌈 <strong>Variedad:</strong> prueba frutas de diferentes colores.</p>
+        </div>
+
+        <h3>🍌 Puedes probar:</h3>
+
+        <p>
+            🍎 Manzana · 🍌 Plátano · 🍊 Naranja · 🍓 Frutilla · 🍉 Sandía
+        </p>
+
+        <button class="boton-tarjeta" onclick="cerrarVentana('frutas')">
+            💚 Cerrar
+        </button>
+
+    </div>
+</div>
+
+<script>
+function abrirVentana(tipo) {
+    if (tipo === "frutas") {
+        document.getElementById("ventana-frutas").style.display = "flex";
+    }
+}
+
+function cerrarVentana(tipo) {
+    if (tipo === "frutas") {
+        document.getElementById("ventana-frutas").style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
