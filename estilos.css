@@ -1096,4 +1096,83 @@ section {
         opacity: 1;
         transform: scale(1);
     }
+   .hero-contenido {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 35px 50px;
+    border-radius: 25px;
+    max-width: 750px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero h1 {
+    color: #1b4332;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #2d6a4f;
+    font-size: 20px;
+} 
+}
+/* FONDO DE FRUTAS PARA EL ENCABEZADO */
+
+.hero {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+        url("https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1600&q=85");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.hero {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+        url("https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1600&q=85");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}.hero h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #1b4332;
+    margin-bottom: 15px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero h2 {
+    font-size: 28px;
+    color: #2d6a4f;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #264653;
+}
+
+.hero .boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 30px;
 }
