@@ -158,6 +158,9 @@
                 Un desayuno equilibrado puede aportar energía y nutrientes
                 necesarios para comenzar las actividades del día.
             </p>
+          <button class="boton-tarjeta" onclick="abrirVentana('desayuno')">
+    🍳 Ver consejos
+</button>  
         </div>
 
         <div class="tarjeta">
@@ -249,7 +252,6 @@ function respuestaIncorrecta() {
         </p>
     </div>
 </footer>
-</body>
 <nav class="navbar">
     <div class="logo">🥗 Alimentación Saludable</div>
 
@@ -313,6 +315,9 @@ function respuestaIncorrecta() {
                 Arroz, avena, quinua, papa y otros alimentos aportan energía
                 para nuestras actividades.
             </p>
+            <button class="boton-tarjeta" onclick="abrirVentana('cereales')">
+    🍚 Ver consejos
+</button>
         </div>
 
         <div class="grupo-alimento">
@@ -322,6 +327,9 @@ function respuestaIncorrecta() {
                 Huevo, pescado, pollo, legumbres y otros alimentos ayudan al
                 crecimiento y mantenimiento del cuerpo.
             </p>
+           <button class="boton-tarjeta" onclick="abrirVentana('proteinas')">
+    🥚 Ver consejos
+</button> 
         </div>
 
     </div>
@@ -485,20 +493,235 @@ function respuestaIncorrecta() {
 
     </div>
 </div>
+<!-- VENTANA DE VERDURAS -->
+<div id="ventana-verduras" class="ventana">
+    <div class="contenido-ventana">
 
+        <button class="cerrar-ventana" onclick="cerrarVentana('verduras')">
+            ✕
+        </button>
+
+        <h2>🥦 ¡Más sobre las verduras!</h2>
+
+        <p>
+            Las verduras son importantes porque aportan vitaminas,
+            minerales, fibra y otros nutrientes que ayudan a cuidar nuestro cuerpo.
+        </p>
+
+        <div class="info-frutas">
+            <p>🥕 <strong>Vitaminas:</strong> ayudan al buen funcionamiento del organismo.</p>
+            <p>🌱 <strong>Fibra:</strong> favorece una alimentación equilibrada.</p>
+            <p>🥦 <strong>Nutrientes:</strong> aportan sustancias importantes para el cuerpo.</p>
+            <p>🌈 <strong>Variedad:</strong> comer verduras de diferentes colores aporta variedad.</p>
+        </div>
+
+        <h3>🥕 Puedes probar:</h3>
+
+        <p>
+            🥕 Zanahoria · 🥦 Brócoli · 🥬 Lechuga · 🍅 Tomate · 🫑 Pimiento
+        </p>
+
+        <button class="boton-tarjeta" onclick="cerrarVentana('verduras')">
+            💚 Cerrar
+        </button>
+
+    </div>
+</div>
+   <!-- VENTANA DE AGUA -->
+<div id="ventana-agua" class="ventana">
+    <div class="contenido-ventana">
+
+        <button class="cerrar-ventana" onclick="cerrarVentana('agua')">
+            ✕
+        </button>
+
+        <h2>💧 ¡Más sobre el agua!</h2>
+
+        <p>
+            El agua es importante para mantener nuestro cuerpo hidratado
+            y ayudar a que funcione correctamente.
+        </p>
+
+        <div class="info-frutas">
+            <p>💧 <strong>Hidratación:</strong> ayuda a mantener el equilibrio de líquidos del cuerpo.</p>
+            <p>🧠 <strong>Concentración:</strong> mantenerse hidratado ayuda al funcionamiento normal del organismo.</p>
+            <p>🏃 <strong>Actividad física:</strong> beber agua es importante cuando realizamos ejercicio.</p>
+            <p>🥤 <strong>Buena elección:</strong> el agua es una excelente opción para acompañar tus comidas.</p>
+        </div>
+
+        <h3>💦 Algunos consejos:</h3>
+
+        <p>
+            💧 Lleva una botella de agua contigo.<br>
+            💧 Bebe agua durante el día.<br>
+            💧 Prefiere agua en lugar de bebidas muy azucaradas.
+        </p>
+
+        <button class="boton-tarjeta" onclick="cerrarVentana('agua')">
+            💚 Cerrar
+        </button>
+
+    </div>
+</div> 
+    <!-- VENTANA DE DESAYUNO -->
+<div id="ventana-desayuno" class="ventana">
+    <div class="contenido-ventana">
+
+        <button class="cerrar-ventana" onclick="cerrarVentana('desayuno')">
+            ✕
+        </button>
+
+        <h2>🍳 ¡Más sobre el desayuno!</h2>
+
+        <p>
+            Un desayuno equilibrado puede aportar energía y nutrientes
+            para comenzar el día y realizar nuestras actividades.
+        </p>
+
+        <div class="info-frutas">
+            <p>🍌 <strong>Frutas:</strong> aportan vitaminas, minerales y fibra.</p>
+            <p>🥛 <strong>Lácteos:</strong> pueden aportar proteínas y calcio.</p>
+            <p>🥣 <strong>Cereales:</strong> aportan energía para comenzar el día.</p>
+            <p>💧 <strong>Agua:</strong> ayuda a mantener una buena hidratación.</p>
+        </div>
+
+        <h3>🌅 Ideas para el desayuno:</h3>
+
+        <p>
+            🍌 Fruta + 🥛 yogur + 🥣 avena
+            <br><br>
+            🍎 Fruta + 🍞 pan + 🥛 leche
+            <br><br>
+            🥚 Huevo + 🍞 pan + 🍊 fruta
+        </p>
+
+        <button class="boton-tarjeta" onclick="cerrarVentana('desayuno')">
+            💚 Cerrar
+        </button>
+
+    </div>
+</div>
+    <!-- VENTANA DE CEREALES -->
+<div id="ventana-cereales" class="ventana">
+    <div class="contenido-ventana">
+
+        <button class="cerrar-ventana" onclick="cerrarVentana('cereales')">
+            ✕
+        </button>
+
+        <h2>🍚 ¡Más sobre los cereales!</h2>
+
+        <p>
+            Los cereales y otros alimentos ricos en carbohidratos
+            pueden aportar energía para realizar nuestras actividades.
+        </p>
+
+        <div class="info-frutas">
+            <p>🍚 <strong>Arroz:</strong> es una fuente de energía para el organismo.</p>
+            <p>🥣 <strong>Avena:</strong> puede formar parte de un desayuno nutritivo.</p>
+            <p>🌾 <strong>Quinua:</strong> es un alimento nutritivo que puede incluirse en una alimentación variada.</p>
+            <p>🥔 <strong>Papa:</strong> aporta carbohidratos y puede formar parte de comidas equilibradas.</p>
+        </div>
+
+        <h3>🌾 Algunas opciones:</h3>
+
+        <p>
+            🍚 Arroz · 🥣 Avena · 🌾 Quinua · 🍞 Pan · 🥔 Papa
+        </p>
+
+        <button class="boton-tarjeta" onclick="cerrarVentana('cereales')">
+            💚 Cerrar
+        </button>
+
+    </div>
+</div>
+    <!-- VENTANA DE PROTEÍNAS -->
+<div id="ventana-proteinas" class="ventana">
+    <div class="contenido-ventana">
+
+        <button class="cerrar-ventana" onclick="cerrarVentana('proteinas')">
+            ✕
+        </button>
+
+        <h2>🥚 ¡Más sobre las proteínas!</h2>
+
+        <p>
+            Las proteínas forman parte de una alimentación variada y ayudan
+            al crecimiento y mantenimiento de nuestro cuerpo.
+        </p>
+
+        <div class="info-frutas">
+            <p>🥚 <strong>Huevo:</strong> es una fuente de proteínas y puede formar parte de comidas equilibradas.</p>
+            <p>🐟 <strong>Pescado:</strong> aporta proteínas y otros nutrientes importantes.</p>
+            <p>🍗 <strong>Pollo:</strong> puede aportar proteínas para una alimentación variada.</p>
+            <p>🌱 <strong>Legumbres:</strong> como lentejas y porotos, también aportan proteínas.</p>
+        </div>
+
+        <h3>🥗 Algunas opciones:</h3>
+
+        <p>
+            🥚 Huevo · 🐟 Pescado · 🍗 Pollo · 🫘 Lentejas · 🫘 Porotos
+        </p>
+
+        <button class="boton-tarjeta" onclick="cerrarVentana('proteinas')">
+            💚 Cerrar
+        </button>
+
+    </div>
+</div>
 <script>
 function abrirVentana(tipo) {
+
     if (tipo === "frutas") {
         document.getElementById("ventana-frutas").style.display = "flex";
     }
+
+    if (tipo === "verduras") {
+        document.getElementById("ventana-verduras").style.display = "flex";
+    }
+
+    if (tipo === "agua") {
+        document.getElementById("ventana-agua").style.display = "flex";
+    }
+
+    if (tipo === "desayuno") {
+        document.getElementById("ventana-desayuno").style.display = "flex";
+    }
+
+ if (tipo === "cereales") {
+    document.getElementById("ventana-cereales").style.display = "flex";
+}
+
+if (tipo === "proteinas") {
+    document.getElementById("ventana-proteinas").style.display = "flex";
 }
 
 function cerrarVentana(tipo) {
+
     if (tipo === "frutas") {
         document.getElementById("ventana-frutas").style.display = "none";
     }
-}
-</script>
 
+    if (tipo === "verduras") {
+        document.getElementById("ventana-verduras").style.display = "none";
+    }
+
+    if (tipo === "agua") {
+        document.getElementById("ventana-agua").style.display = "none";
+    }
+
+    if (tipo === "desayuno") {
+        document.getElementById("ventana-desayuno").style.display = "none";
+    }
+
+  if (tipo === "cereales") {
+    document.getElementById("ventana-cereales").style.display = "none";
+}
+
+if (tipo === "proteinas") {
+    document.getElementById("ventana-proteinas").style.display = "none";
+}
+    
+</script>
 </body>
 </html>
