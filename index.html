@@ -135,7 +135,9 @@
         <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Verduras saludables">
         <h3>🥦 Come verduras</h3>
         <p>Las verduras aportan nutrientes importantes y ayudan a mantener una alimentación equilibrada.</p>
-        <a href="#consejos" class="boton-tarjeta">🥦 Ver consejos</a>
+        <button class="boton-tarjeta" onclick="abrirVentana('verduras')">
+    🥦 Ver consejos
+</button>
         <a href="#reto" class="boton">Ver reto</a>
     </div>
 
@@ -379,24 +381,30 @@ function respuestaIncorrecta() {
         </div>
 
         <div class="consejo">
-            <span>🍎</span>
-            <h3>Come frutas</h3>
-            <p>
-                Incluye diferentes frutas en tu alimentación para obtener
-                vitaminas, minerales y fibra.
-            </p>
-             <button class="boton-tarjeta" onclick="abrirVentana('verduras')">
-        🥦 Ver consejos
-        </div>
+    <span>🍎</span>
+    <h3>Come frutas</h3>
+    <p>
+        Incluye diferentes frutas en tu alimentación para obtener
+        vitaminas, minerales y fibra.
+    </p>
+
+    <button class="boton-tarjeta" onclick="abrirVentana('frutas')">
+        🍎 Ver consejos
+    </button>
+</div>
 
         <div class="consejo">
-            <span>🥦</span>
-            <h3>Come verduras</h3>
-            <p>
-                Las verduras aportan nutrientes importantes y ayudan a
-                mantener una alimentación variada.
-            </p>
-        </div>
+    <span>🥦</span>
+    <h3>Come verduras</h3>
+    <p>
+        Las verduras aportan nutrientes importantes y ayudan a
+        mantener una alimentación variada.
+    </p>
+
+    <button class="boton-tarjeta" onclick="abrirVentana('verduras')">
+        🥦 Ver consejos
+    </button>
+</div>
 
         <div class="consejo">
             <span>🏃</span>
