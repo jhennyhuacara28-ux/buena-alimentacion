@@ -690,6 +690,7 @@ function respuestaIncorrecta() {
 
     </div>
 </div>
+```html
 <script>
 function abrirVentana(tipo) {
 
@@ -714,7 +715,37 @@ function abrirVentana(tipo) {
     }
 
     if (tipo === "proteinas") {
-        document.getElementById("ventana-pro
+        document.getElementById("ventana-proteinas").style.display = "flex";
+    }
+}
+
+function cerrarVentana(tipo) {
+
+    if (tipo === "frutas") {
+        document.getElementById("ventana-frutas").style.display = "none";
+    }
+
+    if (tipo === "verduras") {
+        document.getElementById("ventana-verduras").style.display = "none";
+    }
+
+    if (tipo === "agua") {
+        document.getElementById("ventana-agua").style.display = "none";
+    }
+
+    if (tipo === "desayuno") {
+        document.getElementById("ventana-desayuno").style.display = "none";
+    }
+
+    if (tipo === "cereales") {
+        document.getElementById("ventana-cereales").style.display = "none";
+    }
+
+    if (tipo === "proteinas") {
+        document.getElementById("ventana-proteinas").style.display = "none";
+    }
+}
 </script>
+```
 </body>
 </html>
