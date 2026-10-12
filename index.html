@@ -648,7 +648,7 @@ function respuestaIncorrecta() {
         </button>
 
     </div>
-</div>
+</div> 
     <!-- VENTANA DE PROTEÍNAS -->
 <div id="ventana-proteinas" class="ventana">
     <div class="contenido-ventana">
@@ -686,12 +686,12 @@ function respuestaIncorrecta() {
 <script>
 function abrirVentana(tipo) {
 
-    if (tipo === "frutas") {
-        document.getElementById("ventana-frutas").style.display = "flex";
-    }
-
     if (tipo === "verduras") {
         document.getElementById("ventana-verduras").style.display = "flex";
+    }
+
+    if (tipo === "frutas") {
+        document.getElementById("ventana-frutas").style.display = "flex";
     }
 
     if (tipo === "agua") {
@@ -707,38 +707,7 @@ function abrirVentana(tipo) {
     }
 
     if (tipo === "proteinas") {
-        document.getElementById("ventana-proteinas").style.display = "flex";
-    }
-
-}
-
-function cerrarVentana(tipo) {
-
-    if (tipo === "frutas") {
-        document.getElementById("ventana-frutas").style.display = "none";
-    }
-
-    if (tipo === "verduras") {
-        document.getElementById("ventana-verduras").style.display = "none";
-    }
-
-    if (tipo === "agua") {
-        document.getElementById("ventana-agua").style.display = "none";
-    }
-
-    if (tipo === "desayuno") {
-        document.getElementById("ventana-desayuno").style.display = "none";
-    }
-
-    if (tipo === "cereales") {
-        document.getElementById("ventana-cereales").style.display = "none";
-    }
-
-    if (tipo === "proteinas") {
-        document.getElementById("ventana-proteinas").style.display = "none";
-    }
-
-}
+        document.getElementById("ventana-pro
 </script>
 </body>
 </html>
