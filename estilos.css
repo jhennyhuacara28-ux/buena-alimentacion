@@ -2036,4 +2036,162 @@ section,
         margin-left: auto;
         margin-right: auto;
     }
+/* AJUSTE DE TAMAÑO - PAGINA MAS COMPACTA */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    min-height: 450px !important;
+    padding: 40px 20px !important;
+}
+
+.hero-contenido {
+    max-width: 700px !important;
+    padding: 25px !important;
+}
+
+.hero h1 {
+    font-size: 42px !important;
+    margin: 10px 0 !important;
+}
+
+.hero h2 {
+    font-size: 24px !important;
+}
+
+.hero p {
+    font-size: 17px !important;
+}
+
+section {
+    padding: 45px 20px !important;
+}
+
+section h2,
+.plato-saludable h2,
+.menu-saludable h2,
+.consejos h2 {
+    font-size: 30px !important;
+}
+
+.tarjeta {
+    padding: 20px !important;
+}
+
+.tarjeta h3 {
+    font-size: 21px !important;
+}
+
+.tarjeta p {
+    font-size: 16px !important;
+}
+
+.plato-contenedor,
+.menu-contenedor,
+.consejos-contenedor {
+    gap: 18px !important;
+}
+
+.grupo-alimento,
+.comida {
+    width: 250px !important;
+    padding: 22px 18px !important;
+}
+
+.quiz {
+    max-width: 750px !important;
+    padding: 30px 20px !important;
+}
+
+.consejo {
+    padding: 22px 18px !important;
+}
+
+.sobre-proyecto {
+    padding: 45px 20px !important;
+}
+ @media (max-width: 600px) {
+
+    .navbar {
+        padding: 10px 8px !important;
+        gap: 7px !important;
+    }
+
+    .logo {
+        font-size: 17px !important;
+    }
+
+    .menu {
+        gap: 3px !important;
+    }
+
+    .menu a {
+        font-size: 12px !important;
+        padding: 6px 7px !important;
+    }
+
+    .hero {
+        min-height: 360px !important;
+        padding: 25px 12px !important;
+    }
+
+    .hero-contenido {
+        padding: 18px 15px !important;
+        width: 90% !important;
+    }
+
+    .hero h1 {
+        font-size: 30px !important;
+    }
+
+    .hero h2 {
+        font-size: 19px !important;
+    }
+
+    .hero p {
+        font-size: 15px !important;
+    }
+
+    section {
+        padding: 35px 15px !important;
+    }
+
+    section h2,
+    .plato-saludable h2,
+    .menu-saludable h2,
+    .consejos h2 {
+        font-size: 25px !important;
+    }
+
+    .tarjeta {
+        padding: 16px !important;
+    }
+
+    .grupo-alimento,
+    .comida {
+        width: 100% !important;
+        max-width: 300px !important;
+        padding: 18px 15px !important;
+    }
+
+    .quiz {
+        width: 95% !important;
+        padding: 22px 15px !important;
+    }
+
+    .consejo {
+        padding: 18px 15px !important;
+    }
+
+    .sobre-proyecto {
+        padding: 35px 15px !important;
+    }
+}
 }
