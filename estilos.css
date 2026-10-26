@@ -1624,130 +1624,58 @@ section {
         padding: 25px 15px;
     }
 }
-/* PAGINA MAS PEQUEÑA */
-
-body {
-    font-size: 15px;
-}
+/* VOLVER AL TAMAÑO ANTERIOR */
 
 .hero {
-    min-height: 380px !important;
-    padding: 25px 15px !important;
-}
-
-.hero-contenido {
-    max-width: 700px !important;
-    width: 85% !important;
-    padding: 20px !important;
-}
-
-.hero h1 {
-    font-size: 38px !important;
-}
-
-.hero h2 {
-    font-size: 23px !important;
-}
-
-.hero p {
-    font-size: 16px !important;
-}
-
-section {
-    padding: 30px 20px !important;
-}
-
-section h2 {
-    font-size: 26px !important;
-}
-
-h3 {
-    font-size: 19px !important;
-}
-
-.tarjeta {
-    padding: 18px !important;
-}
-
-.tarjeta p {
-    font-size: 15px !important;
-}
-
-.boton {
-    padding: 9px 18px !important;
-    font-size: 14px !important;
-}
-
-.quiz {
+    min-height: 330px !important;
     padding: 25px !important;
 }
 
-.sobre-proyecto {
-    padding: 30px 20px !important;
+.hero-contenido {
+    width: 75% !important;
+    max-width: 650px !important;
+    padding: 18px !important;
 }
 
-.footer {
-    padding: 25px 15px !important;
+.hero h1 {
+    font-size: 32px !important;
 }
 
-/* CELULAR */
-
-@media (max-width: 600px) {
-
-    .hero {
-        min-height: 300px !important;
-        padding: 15px 10px !important;
-    }
-
-    .hero-contenido {
-        width: 90% !important;
-        padding: 14px !important;
-    }
-
-    .hero h1 {
-        font-size: 27px !important;
-    }
-
-    .hero h2 {
-        font-size: 18px !important;
-    }
-
-    .hero p {
-        font-size: 14px !important;
-    }
-
-    section {
-        padding: 25px 12px !important;
-    }
-
-    section h2 {
-        font-size: 22px !important;
-    }
-
-    h3 {
-        font-size: 17px !important;
-    }
-
-    .tarjeta {
-        padding: 13px !important;
-    }
-
-    .tarjeta p {
-        font-size: 14px !important;
-    }
-
-    .boton {
-        font-size: 13px !important;
-        padding: 8px 14px !important;
-    }
-
-    .quiz,
-    .sobre-contenido {
-        padding: 15px !important;
-    }
-
-    .footer {
-        padding: 18px 12px !important;
-    }
+.hero h2 {
+    font-size: 21px !important;
 }
 
+.hero p {
+    font-size: 15px !important;
+}
+
+section {
+    padding: 25px 30px !important;
+}
+
+section h2 {
+    font-size: 24px !important;
+}
+
+.tarjetas,
+.tarjetas-container,
+.grupos-alimentos,
+.comidas,
+.consejos-container {
+    gap: 15px !important;
+}
+
+.tarjeta,
+.grupo-alimento,
+.comida,
+.consejo {
+    padding: 12px !important;
+}
+
+.tarjeta img,
+.grupo-alimento img,
+.comida img,
+.consejo img {
+    max-width: 220px !important;
+    height: auto !important;
+}
