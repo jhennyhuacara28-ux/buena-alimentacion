@@ -1754,3 +1754,30 @@ section h2 {
         height: 140px !important;
     }
 }
+/* HACER PEQUEÑAS LAS TARJETAS DEL MENU */
+
+.menu-contenedor {
+    max-width: 900px !important;
+    gap: 15px !important;
+}
+
+.comida {
+    width: 220px !important;
+    padding: 15px !important;
+    border-radius: 15px !important;
+}
+
+.comida h3 {
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+}
+
+.comida p {
+    font-size: 14px !important;
+    margin: 6px 0 !important;
+}
+
+.comida-icono {
+    font-size: 40px !important;
+    margin-bottom: 6px !important;
+}
