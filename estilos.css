@@ -1679,3 +1679,78 @@ section h2 {
     max-width: 220px !important;
     height: auto !important;
 }
+/* TARJETAS COMO ANTES */
+
+.tarjetas,
+.tarjetas-container,
+.grupos-alimentos,
+.comidas,
+.consejos-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 18px !important;
+    width: 90% !important;
+    max-width: 1000px !important;
+    margin: 20px auto !important;
+}
+
+.tarjeta,
+.grupo-alimento,
+.comida,
+.consejo {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+    padding: 15px !important;
+    box-sizing: border-box !important;
+}
+
+.tarjeta img,
+.grupo-alimento img,
+.comida img,
+.consejo img {
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .tarjetas,
+    .tarjetas-container,
+    .grupos-alimentos,
+    .comidas,
+    .consejos-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .tarjetas,
+    .tarjetas-container,
+    .grupos-alimentos,
+    .comidas,
+    .consejos-container {
+        grid-template-columns: 1fr !important;
+        width: 90% !important;
+        gap: 15px !important;
+    }
+
+    .tarjeta,
+    .grupo-alimento,
+    .comida,
+    .consejo {
+        max-width: 320px !important;
+    }
+
+    .tarjeta img,
+    .grupo-alimento img,
+    .comida img,
+    .consejo img {
+        height: 140px !important;
+    }
+}
