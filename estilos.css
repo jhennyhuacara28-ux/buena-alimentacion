@@ -923,3 +923,167 @@ body {
 body {
     min-height: 100vh;
 }
+/* =====================================================
+   🌈 MÁS COLOR Y VIDA PARA LA PÁGINA
+   ===================================================== */
+
+/* Fondo general más alegre */
+body {
+    background: linear-gradient(
+        135deg,
+        #e8f8f0,
+        #fff8dc,
+        #eaf7ff,
+        #fff0f5
+    );
+}
+
+/* Secciones con colores suaves */
+section:nth-of-type(1) {
+    background: #f0fff4;
+    border-top-color: #52b788;
+}
+
+section:nth-of-type(2) {
+    background: #fffbea;
+    border-top-color: #f9c74f;
+}
+
+section:nth-of-type(3) {
+    background: #fff1f5;
+    border-top-color: #ff758f;
+}
+
+section:nth-of-type(4) {
+    background: #eefaff;
+    border-top-color: #48cae4;
+}
+
+section:nth-of-type(5) {
+    background: #f8f0ff;
+    border-top-color: #c77dff;
+}
+
+/* Títulos más coloridos */
+section h2 {
+    color: #2d6a4f;
+}
+
+section:nth-of-type(2) h2 {
+    color: #e07a00;
+}
+
+section:nth-of-type(3) h2 {
+    color: #d6336c;
+}
+
+section:nth-of-type(4) h2 {
+    color: #168aad;
+}
+
+section:nth-of-type(5) h2 {
+    color: #7b2cbf;
+}
+
+/* =====================================================
+   COLORES EXTRA PARA LAS TARJETAS
+   ===================================================== */
+
+.tarjeta:nth-child(1) {
+    background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+}
+
+.tarjeta:nth-child(2) {
+    background: linear-gradient(135deg, #fff3cd, #ffe8a1);
+}
+
+.tarjeta:nth-child(3) {
+    background: linear-gradient(135deg, #ffe5d9, #ffcdb2);
+}
+
+.tarjeta:nth-child(4) {
+    background: linear-gradient(135deg, #e0f7fa, #bdefff);
+}
+
+.tarjeta:nth-child(5) {
+    background: linear-gradient(135deg, #f3e5f5, #e0c3fc);
+}
+
+.tarjeta:nth-child(6) {
+    background: linear-gradient(135deg, #ffe4ec, #ffccd5);
+}
+
+/* Borde más llamativo */
+.tarjeta {
+    border-width: 3px;
+}
+
+/* =====================================================
+   BOTONES DE COLORES
+   ===================================================== */
+
+.boton {
+    background: linear-gradient(135deg, #f9c74f, #f9844a);
+}
+
+.boton:hover {
+    background: linear-gradient(135deg, #f77f00, #f94144);
+}
+
+.boton-tarjeta {
+    background: linear-gradient(135deg, #40916c, #2d6a4f);
+}
+
+.boton-tarjeta:hover {
+    background: linear-gradient(135deg, #1b4332, #40916c);
+}
+
+/* =====================================================
+   PLATO SALUDABLE MÁS COLORIDO
+   ===================================================== */
+
+.grupo-alimento:nth-child(1) {
+    background: linear-gradient(135deg, #d8f3dc, #95d5b2);
+}
+
+.grupo-alimento:nth-child(2) {
+    background: linear-gradient(135deg, #fff3cd, #ffd166);
+}
+
+.grupo-alimento:nth-child(3) {
+    background: linear-gradient(135deg, #ffe5d9, #ffadad);
+}
+
+/* =====================================================
+   MENÚ SALUDABLE
+   ===================================================== */
+
+.comida:nth-child(1) {
+    background: #fff3cd;
+    border-color: #ffd166;
+}
+
+.comida:nth-child(2) {
+    background: #d8f3dc;
+    border-color: #74c69d;
+}
+
+.comida:nth-child(3) {
+    background: #e0f7fa;
+    border-color: #48cae4;
+}
+
+.comida:nth-child(4) {
+    background: #f3e5f5;
+    border-color: #c77dff;
+}
+
+.comida:nth-child(5) {
+    background: #ffe4ec;
+    border-color: #ff758f;
+}
+
+.comida:nth-child(6) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+       }
