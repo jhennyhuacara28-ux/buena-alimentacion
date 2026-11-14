@@ -10,12 +10,20 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+ 
+    body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f1f8e9, #fff8e1, #e8f5e9);
+    background:
+        linear-gradient(
+            135deg,
+            #0b3d2e 0%,
+            #1b4332 35%,
+            #2d6a4f 70%,
+            #40916c 100%
+        );
     color: #333;
     line-height: 1.6;
-}
+    }
 
 img {
     max-width: 100%;
@@ -1095,3 +1103,282 @@ a {
         width: 100%;
     }
 }
+/* MEJORA VISUAL DE LA PÁGINA */
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(82, 183, 136, 0.12);
+    border-radius: 50%;
+    top: -80px;
+    right: -60px;
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: rgba(249, 199, 79, 0.12);
+    border-radius: 50%;
+    bottom: -60px;
+    left: -40px;
+}
+
+section > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* TÍTULOS MÁS LLAMATIVOS */
+
+section h2 {
+    text-shadow: 0 3px 8px rgba(27, 67, 50, 0.15);
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    margin: 12px auto 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        #f77f00,
+        #f9c74f,
+        #52b788
+    );
+}
+
+
+/* TARJETAS CON MÁS VIDA */
+
+.tarjeta,
+.comida,
+.consejo,
+.grupo-alimento,
+.dia-reto {
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjeta::before,
+.comida::before,
+.consejo::before,
+.grupo-alimento::before,
+.dia-reto::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    top: -35px;
+    right: -30px;
+}
+
+.tarjeta:hover,
+.comida:hover,
+.consejo:hover,
+.grupo-alimento:hover,
+.dia-reto:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* IMÁGENES MÁS BONITAS */
+
+.tarjeta img {
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* BOTONES MÁS VIVOS */
+
+.boton,
+.boton-tarjeta {
+    position: relative;
+    overflow: hidden;
+}
+
+.boton::after,
+.boton-tarjeta::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: skewX(-25deg);
+    transition: 0.5s ease;
+}
+
+.boton:hover::after,
+.boton-tarjeta:hover::after {
+    left: 130%;
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar {
+    background: linear-gradient(
+        90deg,
+        #081c15,
+        #1b4332,
+        #2d6a4f,
+        #40916c
+    );
+}
+
+.menu a {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.menu a:hover {
+    box-shadow: 0 4px 12px rgba(249, 199, 79, 0.35);
+}
+
+
+/* INTRODUCCIÓN */
+
+.introduccion {
+    background:
+        linear-gradient(
+            135deg,
+            #d8f3dc,
+            #f1faee,
+            #fff3cd
+        );
+}
+
+.introduccion-contenido {
+    border: 3px solid #b7e4c7;
+}
+
+
+/* PLATO */
+
+.plato-saludable {
+    border: 4px solid #52b788;
+    background:
+        radial-gradient(
+            circle at top right,
+            #fff3cd,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #d8f3dc
+        );
+}
+
+
+/* MENÚ */
+
+.menu-saludable {
+    border: 4px solid #52b788;
+}
+
+
+/* DESAYUNO */
+
+.desayuno-contenido {
+    border: 4px solid #f9c74f;
+    border-left-width: 8px;
+}
+
+
+/* IMC */
+
+.imc-contenedor {
+    border: 4px solid #48cae4;
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e0f2fe
+        );
+}
+
+
+/* QUIZ */
+
+.pregunta {
+    border: 3px solid #b7e4c7;
+}
+
+.pregunta button {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* CÁMARA */
+
+.camara-contenedor {
+    border: 4px solid #52b788;
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e0f2fe,
+            #d8f3dc
+        );
+}
+
+
+/* VENTANAS */
+
+.contenido-ventana {
+    border: 4px solid #52b788;
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f1faee
+        );
+}
+
+.contenido-ventana img {
+    border: 4px solid #d8f3dc;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* APARICIÓN SUAVE */
+
+.tarjeta,
+.comida,
+.consejo,
+.grupo-alimento,
+.dia-reto,
+.pregunta,
+.imc-contenedor,
+.camara-contenedor {
+    animation: subir 0.7s ease both;
+}
+
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+        }
