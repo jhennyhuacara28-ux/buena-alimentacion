@@ -883,8 +883,78 @@ function cerrarVentana(tipo) {
     if (tipo === "proteinas") {
         document.getElementById("ventana-proteinas").style.display = "none";
     }
+}  
+ function abrirEjercicio(tipo) {
+
+    if (tipo === "sentadillas") {
+        document.getElementById("ejercicio-sentadillas").style.display = "flex";
+    }
+
 }
- <!-- VENTANA DEL EJERCICIO: SENTADILLAS -->
+
+function cerrarEjercicio(tipo) {
+
+    if (tipo === "sentadillas") {
+        document.getElementById("ejercicio-sentadillas").style.display = "none";
+    }
+
+    }  
+    let tiempoSentadillas = 30;
+let intervaloSentadillas = null;
+
+function iniciarCronometro(tipo) {
+
+    if (tipo === "sentadillas") {
+
+        if (intervaloSentadillas !== null) {
+            return;
+        }
+
+        intervaloSentadillas = setInterval(function() {
+
+            if (tiempoSentadillas > 0) {
+
+                tiempoSentadillas--;
+
+                document.getElementById("cronometro-sentadillas").textContent =
+                    "00:" + String(tiempoSentadillas).padStart(2, "0");
+
+            } else {
+
+                clearInterval(intervaloSentadillas);
+                intervaloSentadillas = null;
+
+            }
+
+        }, 1000);
+    }
+}
+
+function pausarCronometro(tipo) {
+
+    if (tipo === "sentadillas") {
+
+        clearInterval(intervaloSentadillas);
+        intervaloSentadillas = null;
+
+    }
+}
+
+function reiniciarCronometro(tipo) {
+
+    if (tipo === "sentadillas") {
+
+        clearInterval(intervaloSentadillas);
+        intervaloSentadillas = null;
+
+        tiempoSentadillas = 30;
+
+        document.getElementById("cronometro-sentadillas").textContent = "00:30";
+
+    }
+            }
+</script>
+  <!-- VENTANA DEL EJERCICIO: SENTADILLAS -->
 
 <div id="ejercicio-sentadillas" class="ventana">
 
@@ -899,17 +969,25 @@ function cerrarVentana(tipo) {
 
         <div class="video-ejercicio">
             🎥
-            <p>Aquí irá la demostración del movimiento</p>
+            <p>Demostración del ejercicio</p>
         </div>
 
         <p>
-            Realiza el movimiento lentamente y mantén una postura cómoda.
+            Realiza las sentadillas lentamente, manteniendo la espalda
+            cómoda y las rodillas alineadas con los pies.
         </p>
 
         <div class="datos-ejercicio">
+
             <p><strong>Series:</strong> 3</p>
+
             <p><strong>Repeticiones:</strong> 10</p>
+
             <p><strong>Descanso:</strong> 30 segundos</p>
+<button class="boton-ejercicio"
+        onclick="abrirEjercicio('sentadillas')">
+    ▶️ Ver ejercicio
+</button>
         </div>
 
         <div class="cronometro" id="cronometro-sentadillas">
@@ -933,8 +1011,7 @@ function cerrarVentana(tipo) {
 
     </div>
 
-</div>   
-</script>
+</div>  
 </body>
 </html>
     
