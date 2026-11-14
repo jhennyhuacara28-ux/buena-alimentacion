@@ -1,395 +1,1116 @@
-<header class="titulo-principal">
+<!DOCTYPE html>
+<html lang="es">
 
-    <div class="titulo-contenido">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <h1>COME BIEN, VIVE MEJOR</h1>
+    <title>Come Bien, Vive Mejor</title>
 
-        <h2>Alimentación saludable en adolescentes</h2>
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
-        <p>Aprende, elige mejor y cuida tu salud todos los días.</p>
+<body>
 
-    </div>
+    <!-- PORTADA PRINCIPAL -->
 
-</header>
-        <!-- TARJETAS DE ALIMENTACIÓN -->
-    <section class="seccion-tarjetas">
+    <header class="hero" id="inicio">
 
-        <h2>🥗 Alimentación saludable</h2>
+        <div class="hero-contenido">
+
+            <h1>COME BIEN, VIVE MEJOR</h1>
+
+            <h2>Alimentación saludable en adolescentes</h2>
+
+            <p>
+                Aprende, elige mejor y cuida tu salud todos los días.
+            </p>
+
+            <a href="#alimentacion" class="boton">
+                Comenzar
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- BARRA DE NAVEGACIÓN -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Come Bien, Vive Mejor
+        </div>
+
+        <div class="menu">
+
+            <a href="#inicio">Inicio</a>
+
+            <a href="#alimentacion">Alimentación</a>
+
+            <a href="#alimentos">Alimentos</a>
+
+            <a href="#plato">Plato saludable</a>
+
+            <a href="#menu">Menú</a>
+
+            <a href="#consejos">Consejos</a>
+
+            <a href="#quiz">Quiz</a>
+
+        </div>
+
+    </nav>
+        <!-- CONCEPTOS -->
+
+    <section class="introduccion" id="alimentacion">
+
+        <div class="introduccion-contenido">
+
+            <h2>Alimentación saludable en adolescentes</h2>
+
+            <p>
+                Durante la adolescencia, una alimentación saludable es
+                fundamental para acompañar el crecimiento, el desarrollo
+                y las actividades que se realizan diariamente.
+            </p>
+
+            <p>
+                En esta etapa es importante aprender a elegir alimentos
+                variados y equilibrados que aporten los nutrientes que
+                el organismo necesita.
+            </p>
+
+
+            <h2>¿Qué es la alimentación saludable?</h2>
+
+            <p>
+                La alimentación saludable es aquella que incluye diferentes
+                tipos de alimentos en cantidades adecuadas para proporcionar
+                al organismo la energía y los nutrientes necesarios para
+                mantener una buena salud.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ALIMENTOS IMPORTANTES -->
+
+    <section class="tarjetas-seccion" id="alimentos">
+
+        <h2>Alimentos importantes para una alimentación saludable</h2>
 
         <div class="tarjetas">
 
+
+            <!-- FRUTAS -->
+
             <div class="tarjeta">
+
                 <img src="frutas.jpg" alt="Frutas">
-                <h3>🍎 Frutas</h3>
-                <p>Conoce los beneficios de consumir frutas.</p>
-                <button onclick="abrirVentana('frutas')">Ver información</button>
+
+                <h3>Frutas</h3>
+
+                <p>
+                    Las frutas aportan vitaminas, minerales, fibra
+                    y otros nutrientes importantes para nuestro organismo.
+                </p>
+
+                <button class="boton-tarjeta"
+                        onclick="abrirVentana('frutas')">
+                    Ver información
+                </button>
+
             </div>
 
+
+            <!-- VERDURAS -->
+
             <div class="tarjeta">
+
                 <img src="verduras.jpg" alt="Verduras">
-                <h3>🥦 Verduras</h3>
-                <p>Descubre por qué las verduras son importantes.</p>
-                <button onclick="abrirVentana('verduras')">Ver información</button>
+
+                <h3>Verduras</h3>
+
+                <p>
+                    Las verduras aportan vitaminas, minerales y fibra
+                    que ayudan a mantener una alimentación equilibrada.
+                </p>
+
+                <button class="boton-tarjeta"
+                        onclick="abrirVentana('verduras')">
+                    Ver información
+                </button>
+
             </div>
 
+
+            <!-- AGUA -->
+
             <div class="tarjeta">
+
                 <img src="agua.jpg" alt="Agua">
-                <h3>💧 Agua</h3>
-                <p>La hidratación es importante para nuestro cuerpo.</p>
-                <button onclick="abrirVentana('agua')">Ver información</button>
+
+                <h3>Agua</h3>
+
+                <p>
+                    El agua es necesaria para mantener una buena
+                    hidratación y para el funcionamiento adecuado
+                    de nuestro organismo.
+                </p>
+
+                <button class="boton-tarjeta"
+                        onclick="abrirVentana('agua')">
+                    Ver información
+                </button>
+
             </div>
 
+
+            <!-- DESAYUNO -->
+
             <div class="tarjeta">
+
                 <img src="desayuno.jpg" alt="Desayuno saludable">
-                <h3>🍳 Desayuno saludable</h3>
-                <p>Empieza el día con una alimentación equilibrada.</p>
-                <button onclick="abrirVentana('desayuno')">Ver información</button>
+
+                <h3>Desayuno saludable</h3>
+
+                <p>
+                    Un desayuno variado ayuda a comenzar el día
+                    aportando energía y nutrientes.
+                </p>
+
+                <button class="boton-tarjeta"
+                        onclick="abrirVentana('desayuno')">
+                    Ver información
+                </button>
+
             </div>
 
+
+            <!-- CEREALES -->
+
             <div class="tarjeta">
+
                 <img src="cereales.jpg" alt="Cereales">
-                <h3>🌾 Cereales</h3>
-                <p>Aportan energía y nutrientes importantes.</p>
-                <button onclick="abrirVentana('cereales')">Ver información</button>
+
+                <h3>Cereales</h3>
+
+                <p>
+                    Los cereales aportan energía y pueden formar parte
+                    de una alimentación equilibrada.
+                </p>
+
+                <button class="boton-tarjeta"
+                        onclick="abrirVentana('cereales')">
+                    Ver información
+                </button>
+
             </div>
 
+
+            <!-- PROTEÍNAS -->
+
             <div class="tarjeta">
+
                 <img src="proteinas.jpg" alt="Proteínas">
-                <h3>🥚 Proteínas</h3>
-                <p>Ayudan al crecimiento y mantenimiento del cuerpo.</p>
-                <button onclick="abrirVentana('proteinas')">Ver información</button>
+
+                <h3>Proteínas</h3>
+
+                <p>
+                    Los alimentos ricos en proteínas contribuyen
+                    al crecimiento y mantenimiento del organismo.
+                </p>
+
+                <button class="boton-tarjeta"
+                        onclick="abrirVentana('proteinas')">
+                    Ver información
+                </button>
+
             </div>
 
         </div>
 
     </section>
-    <!-- PLATO SALUDABLE -->
-<section class="plato-saludable">
+        <!-- VENTANAS DE INFORMACIÓN DE LOS ALIMENTOS -->
 
-    <h2>Plato saludable</h2>
 
-    <p>
-        Un plato saludable debe contener diferentes grupos de alimentos
-        en cantidades equilibradas para aportar los nutrientes que nuestro
-        cuerpo necesita.
-    </p>
+    <!-- FRUTAS -->
 
-    <div class="plato-contenido">
+    <div id="frutas" class="ventana">
 
-        <img src="plato-saludable.jpg" alt="Plato saludable">
+        <div class="contenido-ventana">
 
-        <div class="plato-texto">
-            <h3>¿Cómo preparar un plato saludable?</h3>
+            <button class="cerrar-ventana"
+                    onclick="cerrarVentana('frutas')">
+                X
+            </button>
+
+            <h2>Frutas</h2>
 
             <p>
-                Incluye verduras y frutas, cereales o alimentos integrales
-                y una fuente de proteínas. También es importante acompañar
-                las comidas con suficiente agua.
+                Las frutas son alimentos importantes dentro de una
+                alimentación saludable. Aportan vitaminas, minerales,
+                fibra y agua que ayudan al buen funcionamiento del organismo.
             </p>
+
+            <h3>Consejo</h3>
+
+            <p>
+                Incluye diferentes frutas durante la semana y aprovecha
+                las frutas de temporada.
+            </p>
+
         </div>
 
     </div>
 
-</section>
-    <!-- MENÚ SALUDABLE -->
-<section class="menu-saludable">
 
-    <h2>Menú saludable</h2>
+    <!-- VERDURAS -->
 
-    <p>
-        Una buena alimentación puede organizarse durante toda la semana
-        incluyendo diferentes alimentos y preparaciones variadas.
-    </p>
+    <div id="verduras" class="ventana">
 
-    <div class="menu-contenido">
+        <div class="contenido-ventana">
 
-        <div class="menu-dia">
-            <h3>Lunes</h3>
-            <p>Desayuno: Avena con fruta.</p>
-            <p>Almuerzo: Arroz, pollo y ensalada.</p>
-            <p>Merienda: Yogur con fruta.</p>
-        </div>
+            <button class="cerrar-ventana"
+                    onclick="cerrarVentana('verduras')">
+                X
+            </button>
 
-        <div class="menu-dia">
-            <h3>Martes</h3>
-            <p>Desayuno: Pan integral y huevo.</p>
-            <p>Almuerzo: Lentejas con verduras.</p>
-            <p>Merienda: Fruta y agua.</p>
-        </div>
+            <h2>Verduras</h2>
 
-        <div class="menu-dia">
-            <h3>Miércoles</h3>
-            <p>Desayuno: Yogur con avena y fruta.</p>
-            <p>Almuerzo: Carne con arroz y verduras.</p>
-            <p>Merienda: Sándwich saludable.</p>
+            <p>
+                Las verduras aportan vitaminas, minerales, fibra y otros
+                nutrientes necesarios para mantener una alimentación variada.
+            </p>
+
+            <h3>Consejo</h3>
+
+            <p>
+                Trata de incluir verduras de diferentes colores en tus comidas.
+            </p>
+
         </div>
 
     </div>
 
-</section>
-    <!-- CONSEJOS SALUDABLES -->
-<section class="consejos">
 
-    <h2>Consejos saludables</h2>
+    <!-- AGUA -->
 
-    <div class="consejos-contenido">
+    <div id="agua" class="ventana">
 
-        <div class="consejo">
-            <h3>Tomar suficiente agua</h3>
+        <div class="contenido-ventana">
+
+            <button class="cerrar-ventana"
+                    onclick="cerrarVentana('agua')">
+                X
+            </button>
+
+            <h2>Agua</h2>
+
             <p>
-                Mantener una buena hidratación ayuda al funcionamiento
-                adecuado de nuestro cuerpo.
+                El agua es necesaria para mantener una buena hidratación
+                y ayudar al organismo a realizar sus funciones correctamente.
             </p>
-        </div>
 
-        <div class="consejo">
-            <h3>Consumir frutas y verduras</h3>
-            <p>
-                Incluir frutas y verduras en las comidas permite obtener
-                vitaminas, minerales y otros nutrientes importantes.
-            </p>
-        </div>
+            <h3>Consejo</h3>
 
-        <div class="consejo">
-            <h3>Mantener horarios de comida</h3>
             <p>
-                Organizar las comidas durante el día ayuda a mantener
-                una alimentación más equilibrada.
+                Lleva agua contigo y recuerda beber durante el día.
             </p>
-        </div>
 
-        <div class="consejo">
-            <h3>Evitar el exceso de alimentos ultraprocesados</h3>
-            <p>
-                Es recomendable consumirlos con moderación y preferir
-                alimentos naturales o preparados en casa.
-            </p>
         </div>
 
     </div>
 
-</section>
-    <!-- ENCUESTA -->
-<section class="encuesta">
 
-    <h2>Participar en la encuesta</h2>
+    <!-- DESAYUNO -->
 
-    <p>
-        Tu opinión es importante para conocer los hábitos de alimentación
-        de los estudiantes y mejorar esta página web.
-    </p>
+    <div id="desayuno" class="ventana">
 
-    <a href="https://forms.google.com/" target="_blank" class="boton-encuesta">
-        Participar en la encuesta
-    </a>
+        <div class="contenido-ventana">
 
-</section>
-    <!-- SOBRE EL PROYECTO -->
-<section class="sobre-proyecto">
+            <button class="cerrar-ventana"
+                    onclick="cerrarVentana('desayuno')">
+                X
+            </button>
 
-    <h2>Sobre el proyecto</h2>
+            <h2>Desayuno saludable</h2>
 
-    <p>
-        Este proyecto tiene como propósito fortalecer los conocimientos
-        sobre la alimentación saludable en los adolescentes mediante una
-        página web educativa, sencilla y fácil de utilizar.
-    </p>
+            <p>
+                El desayuno puede aportar energía y nutrientes para comenzar
+                las actividades del día.
+            </p>
 
-    <p>
-        La página presenta información sobre diferentes alimentos,
-        recomendaciones, ejemplos de menús y consejos que pueden ayudar
-        a los estudiantes a conocer la importancia de mantener buenos
-        hábitos de alimentación.
-    </p>
+            <h3>Consejo</h3>
 
-</section>
-    <!-- CALCULADORA DE IMC -->
-<section class="calculadora-imc">
+            <p>
+                Combina alimentos variados para obtener un desayuno equilibrado.
+            </p>
 
-    <h2>Calculadora de IMC</h2>
+        </div>
 
-    <p>
-        Introduce tus datos para conocer tu índice de masa corporal.
-    </p>
+    </div>
 
-    <div class="imc-formulario">
 
-        <label for="peso">Peso (kg)</label>
-        <input type="number" id="peso" placeholder="Ejemplo: 60">
+    <!-- CEREALES -->
 
-        <label for="altura">Altura (m)</label>
-        <input type="number" id="altura" step="0.01" placeholder="Ejemplo: 1.60">
+    <div id="cereales" class="ventana">
 
-        <button type="button" onclick="calcularIMC()">
-            Calcular IMC
+        <div class="contenido-ventana">
+
+            <button class="cerrar-ventana"
+                    onclick="cerrarVentana('cereales')">
+                X
+            </button>
+
+            <h2>Cereales</h2>
+
+            <p>
+                Los cereales aportan energía y pueden formar parte de diferentes
+                comidas dentro de una alimentación equilibrada.
+            </p>
+
+            <h3>Consejo</h3>
+
+            <p>
+                Varía las fuentes de cereales y, cuando sea posible,
+                elige opciones integrales.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROTEÍNAS -->
+
+    <div id="proteinas" class="ventana">
+
+        <div class="contenido-ventana">
+
+            <button class="cerrar-ventana"
+                    onclick="cerrarVentana('proteinas')">
+                X
+            </button>
+
+            <h2>Proteínas</h2>
+
+            <p>
+                Las proteínas participan en el crecimiento y mantenimiento
+                de diferentes tejidos del organismo.
+            </p>
+
+            <h3>Consejo</h3>
+
+            <p>
+                Incluye diferentes alimentos que aporten proteínas
+                dentro de tus comidas.
+            </p>
+
+        </div>
+
+    </div>
+        <!-- PLATO SALUDABLE -->
+
+    <section class="plato-seccion" id="plato">
+
+        <h2>El plato saludable</h2>
+
+        <p class="texto-seccion">
+            Una alimentación equilibrada puede incluir diferentes
+            grupos de alimentos en las comidas principales.
+        </p>
+
+        <div class="plato-saludable">
+
+            <div class="plato-contenedor">
+
+                <div class="grupo-alimento">
+                    <div class="icono-alimento">Frutas y verduras</div>
+
+                    <p>
+                        Aportan vitaminas, minerales y fibra.
+                    </p>
+                </div>
+
+                <div class="grupo-alimento">
+                    <div class="icono-alimento">Cereales</div>
+
+                    <p>
+                        Aportan energía para las actividades diarias.
+                    </p>
+                </div>
+
+                <div class="grupo-alimento">
+                    <div class="icono-alimento">Proteínas</div>
+
+                    <p>
+                        Contribuyen al crecimiento y mantenimiento
+                        del organismo.
+                    </p>
+                </div>
+
+                <div class="grupo-alimento">
+                    <div class="icono-alimento">Agua</div>
+
+                    <p>
+                        Ayuda a mantener una adecuada hidratación.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- MENÚ SALUDABLE -->
+
+    <section class="menu-seccion" id="menu">
+
+        <h2>Menú saludable</h2>
+
+        <p class="texto-seccion">
+            Un menú variado permite incluir diferentes alimentos
+            y obtener los nutrientes que el organismo necesita.
+        </p>
+
+        <div class="menu-saludable">
+
+            <div class="menu-contenedor">
+
+                <div class="comida">
+
+                    <div class="comida-icono">
+                        Desayuno
+                    </div>
+
+                    <h3>Desayuno</h3>
+
+                    <p>
+                        Leche o yogur, fruta y un alimento como avena,
+                        pan o cereal.
+                    </p>
+
+                </div>
+
+
+                <div class="comida">
+
+                    <div class="comida-icono">
+                        Media mañana
+                    </div>
+
+                    <h3>Media mañana</h3>
+
+                    <p>
+                        Una fruta, yogur u otro alimento sencillo
+                        para complementar la alimentación.
+                    </p>
+
+                </div>
+
+
+                <div class="comida">
+
+                    <div class="comida-icono">
+                        Almuerzo
+                    </div>
+
+                    <h3>Almuerzo</h3>
+
+                    <p>
+                        Puede incluir verduras, cereales o tubérculos
+                        y una fuente de proteínas.
+                    </p>
+
+                </div>
+
+
+                <div class="comida">
+
+                    <div class="comida-icono">
+                        Merienda
+                    </div>
+
+                    <h3>Merienda</h3>
+
+                    <p>
+                        Una opción variada como fruta, yogur,
+                        avena o pan.
+                    </p>
+
+                </div>
+
+
+                <div class="comida">
+
+                    <div class="comida-icono">
+                        Cena
+                    </div>
+
+                    <h3>Cena</h3>
+
+                    <p>
+                        Una comida equilibrada que incluya alimentos
+                        variados y una cantidad adecuada.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- IMPORTANCIA DEL DESAYUNO -->
+
+    <section class="desayuno-importancia">
+
+        <h2>Importancia del desayuno</h2>
+
+        <div class="desayuno-contenido">
+
+            <p>
+                El desayuno es una de las comidas que puede ayudar a
+                comenzar el día con energía y aportar nutrientes
+                necesarios para las actividades diarias.
+            </p>
+
+            <p>
+                Un desayuno variado puede incluir alimentos de diferentes
+                grupos, como frutas, cereales, lácteos u otras opciones
+                nutritivas.
+            </p>
+
+            <h3>Consejito</h3>
+
+            <p>
+                Trata de no comenzar el día sin comer y busca opciones
+                variadas que se adapten a tus necesidades.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONSEJOS -->
+
+    <section class="consejos" id="consejos">
+
+        <h2>Consejos para una alimentación saludable</h2>
+
+        <div class="consejos-contenedor">
+
+            <div class="consejo">
+
+                <h3>Toma agua</h3>
+
+                <p>
+                    Mantén una buena hidratación durante el día
+                    y prefiere el agua como bebida habitual.
+                </p>
+
+            </div>
+
+
+            <div class="consejo">
+
+                <h3>Come frutas</h3>
+
+                <p>
+                    Incluye diferentes frutas en tu alimentación
+                    para obtener vitaminas, minerales y fibra.
+                </p>
+
+            </div>
+
+
+            <div class="consejo">
+
+                <h3>Come verduras</h3>
+
+                <p>
+                    Agrega verduras de diferentes colores a tus
+                    comidas para aumentar la variedad de nutrientes.
+                </p>
+
+            </div>
+
+
+            <div class="consejo">
+
+                <h3>Varía tus alimentos</h3>
+
+                <p>
+                    Combina diferentes tipos de alimentos para
+                    conseguir una alimentación más variada.
+                </p>
+
+            </div>
+
+
+            <div class="consejo">
+
+                <h3>Cuida tus horarios</h3>
+
+                <p>
+                    Organiza tus comidas durante el día y evita
+                    pasar largos períodos sin comer.
+                </p>
+
+            </div>
+
+
+            <div class="consejo">
+
+                <h3>Elige mejor</h3>
+
+                <p>
+                    Aprende a reconocer los alimentos y elige
+                    opciones variadas y nutritivas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RETO DE 7 DÍAS -->
+
+    <section class="reto" id="reto">
+
+        <h2>Reto de 7 días</h2>
+
+        <p class="texto-seccion">
+            Durante una semana puedes practicar pequeños hábitos
+            que ayuden a mejorar tu alimentación diaria.
+        </p>
+
+        <div class="reto-contenedor">
+
+            <div class="dia-reto">
+                <h3>Día 1</h3>
+                <p>Toma agua durante el día.</p>
+            </div>
+
+            <div class="dia-reto">
+                <h3>Día 2</h3>
+                <p>Incluye una fruta en tu alimentación.</p>
+            </div>
+
+            <div class="dia-reto">
+                <h3>Día 3</h3>
+                <p>Agrega verduras a una de tus comidas.</p>
+            </div>
+
+            <div class="dia-reto">
+                <h3>Día 4</h3>
+                <p>Empieza el día con un desayuno variado.</p>
+            </div>
+
+            <div class="dia-reto">
+                <h3>Día 5</h3>
+                <p>Prueba un alimento saludable diferente.</p>
+            </div>
+
+            <div class="dia-reto">
+                <h3>Día 6</h3>
+                <p>Recuerda beber agua durante tus actividades.</p>
+            </div>
+
+            <div class="dia-reto">
+                <h3>Día 7</h3>
+                <p>Revisa los hábitos que practicaste durante la semana.</p>
+            </div>
+
+        </div>
+
+    </section>
+        <!-- CALCULADORA DE IMC -->
+
+    <section class="calculadora-imc" id="imc">
+
+        <h2>Calculadora de IMC</h2>
+
+        <p>
+            Ingresa tu peso y altura para obtener un cálculo orientativo
+            del índice de masa corporal.
+        </p>
+
+        <div class="imc-contenedor">
+
+            <label for="peso">Peso en kg</label>
+            <input type="number" id="peso" placeholder="Ejemplo: 60">
+
+            <label for="altura">Altura en metros</label>
+            <input type="number" id="altura" step="0.01"
+                   placeholder="Ejemplo: 1.60">
+
+            <button class="boton" onclick="calcularIMC()">
+                Calcular IMC
+            </button>
+
+            <div id="resultado-imc"></div>
+
+        </div>
+
+    </section>
+        <!-- QUIZ -->
+
+    <section class="quiz" id="quiz">
+
+        <h2>Quiz de alimentación saludable</h2>
+
+        <p>
+            Comprueba cuánto aprendiste sobre una alimentación saludable.
+        </p>
+
+        <div class="pregunta">
+
+            <h3>1. ¿Cuál de estos alimentos aporta vitaminas y fibra?</h3>
+
+            <button onclick="responderQuiz(this, true)">
+                Frutas
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Gaseosa
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Golosinas
+            </button>
+
+        </div>
+
+
+        <div class="pregunta">
+
+            <h3>2. ¿Qué bebida ayuda a mantener una buena hidratación?</h3>
+
+            <button onclick="responderQuiz(this, true)">
+                Agua
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Gaseosa
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Bebida energética
+            </button>
+
+        </div>
+
+
+        <div class="pregunta">
+
+            <h3>3. ¿Por qué es importante desayunar?</h3>
+
+            <button onclick="responderQuiz(this, true)">
+                Porque puede aportar energía y nutrientes
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Porque reemplaza todas las comidas
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Porque evita beber agua
+            </button>
+
+        </div>
+
+
+        <div class="pregunta">
+
+            <h3>4. ¿Qué ayuda a tener una alimentación variada?</h3>
+
+            <button onclick="responderQuiz(this, true)">
+                Consumir diferentes tipos de alimentos
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Comer siempre lo mismo
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Evitar todas las verduras
+            </button>
+
+        </div>
+
+
+        <div class="pregunta">
+
+            <h3>5. ¿Qué hábito es recomendable durante el día?</h3>
+
+            <button onclick="responderQuiz(this, true)">
+                Beber agua y consumir alimentos variados
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                No comer durante todo el día
+            </button>
+
+            <button onclick="responderQuiz(this, false)">
+                Reemplazar el agua por gaseosas
+            </button>
+
+        </div>
+
+
+        <button class="boton" onclick="mostrarResultadoQuiz()">
+            Ver resultado
         </button>
 
-    </div>
+        <div id="resultado">
+        </div
+                <!-- CÁMARA PARA ALIMENTOS -->
 
-    <div id="resultado-imc" class="resultado-imc"></div>
+    <section class="camara-seccion" id="camara-alimentos">
 
-    <p class="nota-imc">
-        El IMC es una medida orientativa. En adolescentes, su interpretación
-        debe considerar la edad y el desarrollo.
-    </p>
+        <h2>Explora tus alimentos</h2>
 
-</section>
-    <!-- PLATOS SALUDABLES -->
-<section class="platos-saludables">
+        <p>
+            Usa la cámara para tomar una fotografía de un alimento
+            y observarlo dentro de la página.
+        </p>
 
-    <h2>Platos saludables</h2>
+        <div class="camara-contenedor">
 
-    <p>
-        Algunas ideas de platos equilibrados que pueden formar parte
-        de una alimentación saludable.
-    </p>
+            <video id="camara" autoplay playsinline></video>
 
-    <div class="tarjetas-platos">
+            <canvas id="foto-alimento"></canvas>
 
-        <div class="plato">
-            <img src="plato1.jpg" alt="Ensalada con pollo">
-            <h3>Pollo con ensalada</h3>
-            <p>
-                Pollo acompañado de verduras frescas y una porción
-                de arroz.
-            </p>
+            <div class="botones-camara">
+
+                <button class="boton" onclick="iniciarCamara()">
+                    Abrir cámara
+                </button>
+
+                <button class="boton" onclick="tomarFoto()">
+                    Tomar foto
+                </button>
+
+                <button class="boton" onclick="cerrarCamara()">
+                    Cerrar cámara
+                </button>
+
+            </div>
+
         </div>
+   
+    </section>
+        <!-- SCRIPTS -->
 
-        <div class="plato">
-            <img src="plato2.jpg" alt="Arroz con verduras">
-            <h3>Arroz con verduras</h3>
-            <p>
-                Arroz acompañado de diferentes verduras y una fuente
-                de proteína.
-            </p>
-        </div>
+    <script>
 
-        <div class="plato">
-            <img src="plato3.jpg" alt="Lentejas con verduras">
-            <h3>Lentejas con verduras</h3>
-            <p>
-                Una preparación nutritiva con legumbres y verduras
-                variadas.
-            </p>
-        </div>
+        /* VENTANAS DE LAS TARJETAS */
 
-        <div class="plato">
-            <img src="plato4.jpg" alt="Pescado con verduras">
-            <h3>Pescado con verduras</h3>
-            <p>
-                Pescado acompañado de verduras y una porción de
-                alimentos integrales.
-            </p>
-        </div>
+        function abrirVentana(id) {
 
-    </div>
+            document.getElementById(id).style.display = "flex";
 
-</section>
-    <!-- ESCANEAR ALIMENTO -->
-<section class="escanear-alimento">
+        }
 
-    <h2>Escanear alimento</h2>
 
-    <p>
-        Toma una fotografía de un alimento para conocer información
-        nutricional aproximada.
-    </p>
+        function cerrarVentana(id) {
 
-    <div class="camara">
+            document.getElementById(id).style.display = "none";
 
-        <video id="camara" autoplay playsinline></video>
+        }
 
-        <button type="button" onclick="iniciarCamara()">
-            Abrir cámara
-        </button>
 
-        <button type="button" onclick="tomarFoto()">
-            Tomar foto
-        </button>
+        /* CALCULADORA DE IMC */
 
-        <canvas id="foto-alimento"></canvas>
+        function calcularIMC() {
 
-    </div>
+            const peso = parseFloat(
+                document.getElementById("peso").value
+            );
 
-    <div id="resultado-alimento" class="resultado-alimento">
+            const altura = parseFloat(
+                document.getElementById("altura").value
+            );
 
-        <h3>Información nutricional</h3>
+            const resultado = document.getElementById("resultado-imc");
 
-        <p>Alimento: --</p>
-        <p>Calorías: --</p>
-        <p>Proteínas: --</p>
-        <p>Carbohidratos: --</p>
-        <p>Grasas: --</p>
+            if (!peso || !altura || altura <= 0) {
 
-    </div>
+                resultado.textContent =
+                    "Completa los datos correctamente.";
 
-</section>
-    <!-- HÁBITOS SALUDABLES -->
-<section class="habitos">
+                return;
+            }
 
-    <h2>Hábitos saludables</h2>
+            const imc = peso / (altura * altura);
 
-    <div class="tarjetas-habitos">
+            resultado.textContent =
+                "Tu IMC es: " + imc.toFixed(1);
 
-        <div class="habito">
-            <h3>Alimentación variada</h3>
-            <p>
-                Consume diferentes tipos de alimentos para obtener
-                los nutrientes que tu cuerpo necesita.
-            </p>
-        </div>
+        }
 
-        <div class="habito">
-            <h3>Hidratación</h3>
-            <p>
-                Bebe agua durante el día y mantén una buena hidratación.
-            </p>
-        </div>
 
-        <div class="habito">
-            <h3>Actividad física</h3>
-            <p>
-                Mantenerse activo ayuda a cuidar la salud y el bienestar.
-            </p>
-        </div>
+        /* QUIZ */
 
-        <div class="habito">
-            <h3>Descanso</h3>
-            <p>
-                Dormir y descansar adecuadamente también forma parte
-                de un estilo de vida saludable.
-            </p>
-        </div>
+        let respuestasCorrectas = 0;
 
-    </div>
 
-</section>
-    <!-- INFORMACIÓN DEL PROYECTO -->
-<section class="informacion-proyecto">
+        function responderQuiz(boton, correcto) {
 
-    <h2>Sobre este proyecto</h2>
+            if (boton.dataset.respondido === "si") {
+                return;
+            }
 
-    <p>
-        Esta página web fue desarrollada para promover la importancia
-        de una alimentación saludable en los adolescentes y brindar
-        información sencilla que pueda aplicarse en la vida diaria.
-    </p>
+            boton.dataset.respondido = "si";
 
-</section>
+            if (correcto) {
 
-<!-- PIE DE PÁGINA -->
-<footer class="pie-pagina">
+                respuestasCorrectas++;
 
-    <p>Proyecto de Grado 2026</p>
-    <p>Técnico Medio en Sistemas Informáticos</p>
-    <p>Unidad Educativa 6 de Junio "B"</p>
-    <p>Villazón - Bolivia</p>
+                boton.classList.add("correcta");
 
-    <p class="autor">
-        Elaborado por: Huacara Pereira Jhenny
-    </p>
+            } else {
 
-</footer>
+                boton.classList.add("incorrecta");
+
+            }
+
+        }
+
+
+        function mostrarResultadoQuiz() {
+
+            const resultado =
+                document.getElementById("resultado");
+
+            resultado.textContent =
+                "Obtuviste " +
+                respuestasCorrectas +
+                " respuestas correctas de 5.";
+
+        }
+
+
+        /* CÁMARA */
+
+        let flujoCamara = null;
+
+
+        function iniciarCamara() {
+
+            const video =
+                document.getElementById("camara");
+
+            if (!navigator.mediaDevices ||
+                !navigator.mediaDevices.getUserMedia) {
+
+                alert(
+                    "La cámara no está disponible en este navegador."
+                );
+
+                return;
+            }
+
+            navigator.mediaDevices.getUserMedia({
+
+                video: {
+                    facingMode: "environment"
+                },
+
+                audio: false
+
+            })
+
+            .then(function(stream) {
+
+                flujoCamara = stream;
+
+                video.srcObject = stream;
+
+                video.play();
+
+            })
+
+            .catch(function(error) {
+
+                alert(
+                    "No se pudo acceder a la cámara."
+                );
+
+                console.error(error);
+
+            });
+
+        }
+
+
+        function tomarFoto() {
+
+            const video =
+                document.getElementById("camara");
+
+            const canvas =
+                document.getElementById("foto-alimento");
+
+            if (!video.srcObject) {
+
+                alert(
+                    "Primero abre la cámara."
+                );
+
+                return;
+            }
+
+            canvas.width = video.videoWidth;
+
+            canvas.height = video.videoHeight;
+
+            const contexto =
+                canvas.getContext("2d");
+
+            contexto.drawImage(
+                video,
+                0,
+                0,
+                canvas.width,
+                canvas.height
+            );
+
+        }
+
+
+        function cerrarCamara() {
+
+            if (flujoCamara) {
+
+                flujoCamara
+                    .getTracks()
+                    .forEach(function(track) {
+                        track.stop();
+                    });
+
+            }
+
+            document.getElementById("camara").srcObject = null;
+
+            flujoCamara = null;
+
+        }
+
+    </script>
+
 
 </body>
+
 </html>
