@@ -1502,3 +1502,162 @@ section h2::after {
     background: #d8f3dc;
     border-color: #40916c;
 }
+/* COLORES PARA TODAS LAS TARJETAS DESDE PLATO SALUDABLE */
+
+/* PLATO SALUDABLE */
+.grupo-alimento:nth-child(1) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.grupo-alimento:nth-child(2) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.grupo-alimento:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.grupo-alimento:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+
+/* MENÚ SALUDABLE */
+.comida:nth-child(1) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.comida:nth-child(2) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.comida:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.comida:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+.comida:nth-child(5) {
+    background: #f3e5f5;
+    border-color: #c77dff;
+}
+
+
+/* CONSEJOS */
+.consejo:nth-child(1) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.consejo:nth-child(2) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.consejo:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.consejo:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+.consejo:nth-child(5) {
+    background: #f3e5f5;
+    border-color: #c77dff;
+}
+
+.consejo:nth-child(6) {
+    background: #fff0f3;
+    border-color: #ff758f;
+}
+
+
+/* RETO DE 7 DÍAS */
+.dia-reto:nth-child(1) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.dia-reto:nth-child(2) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.dia-reto:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.dia-reto:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+.dia-reto:nth-child(5) {
+    background: #f3e5f5;
+    border-color: #c77dff;
+}
+
+.dia-reto:nth-child(6) {
+    background: #fff0f3;
+    border-color: #ff758f;
+}
+
+.dia-reto:nth-child(7) {
+    background: #d8f3dc;
+    border-color: #40916c;
+}
+
+
+/* CALCULADORA IMC */
+.imc-contenedor {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+
+/* PREGUNTAS DEL QUIZ */
+.pregunta:nth-child(1) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.pregunta:nth-child(2) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.pregunta:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.pregunta:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+.pregunta:nth-child(5) {
+    background: #f3e5f5;
+    border-color: #c77dff;
+}
+
+
+/* CÁMARA */
+.camara-contenedor {
+    background: #d8f3dc;
+    border-color: #52b788;
+    }
