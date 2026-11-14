@@ -1,65 +1,59 @@
-/* CONFIGURACIÓN GENERAL */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f7f4ec;
-    color: #26352d;
-    line-height: 1.6;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-button,
-a {
-    font-family: inherit;
-}
-/* TÍTULO PRINCIPAL */
-
 .titulo-principal {
     width: 100%;
-    min-height: 360px;
-    padding: 70px 20px;
+    min-height: 430px;
+    padding: 50px 20px;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
     text-align: center;
 
     background-image:
-        linear-gradient(rgba(20, 70, 45, 0.55), rgba(20, 70, 45, 0.55)),
-        url("frutas.jpg");
+        linear-gradient(
+            rgba(20, 70, 40, 0.45),
+            rgba(20, 70, 40, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=1600&q=80");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.titulo-contenido {
+    width: 90%;
+    max-width: 950px;
+    padding: 40px 25px;
+
+    background: rgba(255, 255, 255, 0.20);
+
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
 
     color: white;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
 }
 
-.titulo-principal h1 {
-    font-size: clamp(2rem, 6vw, 4.5rem);
+.titulo-contenido h1 {
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
     font-weight: bold;
     letter-spacing: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
-.titulo-principal p {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    max-width: 700px;
+.titulo-contenido h2 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: normal;
+    margin-bottom: 12px;
 }
+
+.titulo-contenido p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    margin: 0;
+                 }
+
 /* ALIMENTACIÓN SALUDABLE */
 
 .seccion-tarjetas {
