@@ -1260,3 +1260,91 @@ section:first-of-type p + p {
         padding: 0 5px;
     }
            }
+/* =====================================================
+   📏 MARGEN PARA TODA LA PÁGINA
+   ===================================================== */
+
+html {
+    background: #dff7e8;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 16px 20px;
+    margin: 0;
+}
+
+/* TODO EL SITIO RESPETA EL MARGEN */
+header,
+nav,
+main,
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Espacio entre las partes principales */
+header {
+    margin-bottom: 12px;
+}
+
+nav {
+    margin-bottom: 18px;
+}
+
+main {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+footer {
+    margin-top: 18px;
+}
+
+/* =====================================================
+   📱 MARGEN EN CELULAR
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px 10px;
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-bottom: 12px;
+    }
+
+    main {
+        margin-bottom: 12px;
+    }
+
+    footer {
+        margin-top: 12px;
+    }
+}
+
+/* =====================================================
+   📱 CELULARES MUY PEQUEÑOS
+   ===================================================== */
+
+@media (max-width: 380px) {
+
+    body {
+        padding: 8px;
+    }
+   }
