@@ -1490,3 +1490,105 @@ footer {
         margin-right: 8px;
     }
                                 }
+/* ============================= */
+/* ADAPTACIÓN PARA CELULAR Y PC  */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 15px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Contenido con espacio a los lados */
+section,
+.hero,
+.sobre-proyecto,
+.plato-saludable,
+.menu-saludable,
+.consejos,
+.quiz {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Espacio interno para que nada choque con los bordes */
+section {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* ================= */
+/* COMPUTADORA / PC  */
+/* ================= */
+
+@media (min-width: 769px) {
+    body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .tarjetas,
+    .tarjetas-container,
+    .grupos-alimentos,
+    .comidas,
+    .consejos-container {
+        gap: 20px;
+    }
+}
+
+/* ================= */
+/* CELULAR           */
+/* ================= */
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .tarjetas,
+    .tarjetas-container,
+    .grupos-alimentos,
+    .comidas,
+    .consejos-container {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .tarjeta,
+    .grupo-alimento,
+    .comida,
+    .consejo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
