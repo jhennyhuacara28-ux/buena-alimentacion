@@ -1105,3 +1105,122 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
    }
+/* =====================================================
+   ✨ MÁS ESPACIO Y TEXTO MÁS CÓMODO
+   ===================================================== */
+
+/* Texto general */
+p {
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    margin-bottom: 18px;
+}
+
+/* Títulos */
+h2 {
+    line-height: 1.3;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+/* Espacio entre el título de una sección y su contenido */
+section h2 + p {
+    margin-top: 10px;
+}
+
+/* =====================================================
+   🍎 TARJETAS MÁS COMPACTAS
+   ===================================================== */
+
+.tarjeta {
+    padding: 14px;
+}
+
+.tarjeta img {
+    height: 145px;
+}
+
+.tarjeta h3 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+/* Espacio entre tarjetas */
+.tarjetas {
+    gap: 14px;
+}
+
+/* =====================================================
+   🌱 TEXTO DE ALIMENTOS RECOMENDADOS
+   ===================================================== */
+
+.grupo-alimento {
+    padding: 15px;
+}
+
+.grupo-alimento p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* =====================================================
+   🧠 ¿SABÍAS QUE?
+   ===================================================== */
+
+.info-frutas {
+    line-height: 1.8;
+}
+
+.info-frutas p {
+    margin-bottom: 15px;
+}
+
+/* =====================================================
+   📱 CELULAR
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    section h2 {
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .tarjeta {
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .tarjeta img {
+        height: 130px;
+    }
+
+    .tarjeta h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .tarjeta p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .tarjetas {
+        gap: 12px;
+    }
+}
