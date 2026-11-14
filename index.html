@@ -889,38 +889,45 @@
                 <!-- CÁMARA PARA ALIMENTOS -->
 
     <section class="camara-seccion" id="camara-alimentos">
+    <h2>Explora tus alimentos</h2>
 
-        <h2>Explora tus alimentos</h2>
+    <p>
+        Toma una fotografía de un alimento y consulta información nutricional aproximada.
+    </p>
 
-        <p>
-            Usa la cámara para tomar una fotografía de un alimento
-            y observarlo dentro de la página.
-        </p>
+    <div class="camara-contenedor">
 
-        <div class="camara-contenedor">
+        <video id="camara" autoplay playsinline></video>
 
-            <video id="camara" autoplay playsinline></video>
+        <canvas id="foto-alimento"></canvas>
 
-            <canvas id="foto-alimento"></canvas>
+        <div class="botones-camara">
+            <button class="boton" onclick="iniciarCamara()">Abrir cámara</button>
+            <button class="boton" onclick="tomarFoto()">Tomar foto</button>
+            <button class="boton" onclick="cerrarCamara()">Cerrar cámara</button>
+        </div>
 
-            <div class="botones-camara">
+        <div class="informacion-alimento">
 
-                <button class="boton" onclick="iniciarCamara()">
-                    Abrir cámara
-                </button>
+            <label for="alimento">Selecciona el alimento fotografiado:</label>
 
-                <button class="boton" onclick="tomarFoto()">
-                    Tomar foto
-                </button>
+            <select id="alimento" onchange="mostrarInformacionAlimento()">
+                <option value="">Selecciona un alimento</option>
+                <option value="manzana">Manzana</option>
+                <option value="platano">Plátano</option>
+                <option value="huevo">Huevo</option>
+                <option value="pollo">Pollo</option>
+                <option value="arroz">Arroz</option>
+                <option value="avena">Avena</option>
+                <option value="leche">Leche</option>
+                <option value="verduras">Verduras</option>
+            </select>
 
-                <button class="boton" onclick="cerrarCamara()">
-                    Cerrar cámara
-                </button>
-
-            </div>
+            <div id="resultado-alimento"></div>
 
         </div>
-   
+
+    </div>
     </section>
         <!-- SCRIPTS -->
 
