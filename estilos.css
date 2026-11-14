@@ -1087,3 +1087,21 @@ section:nth-of-type(5) h2 {
     background: #ffe5d9;
     border-color: #f9844a;
        }
+/* =====================================================
+   🌈 FONDO PRINCIPAL DE LA PÁGINA
+   ===================================================== */
+
+html {
+    background: #dff7e8;
+}
+
+body {
+    background:
+        radial-gradient(circle at 10% 10%, #fff3b0 0%, transparent 22%),
+        radial-gradient(circle at 90% 20%, #bdefff 0%, transparent 22%),
+        radial-gradient(circle at 15% 85%, #ffd6e7 0%, transparent 24%),
+        radial-gradient(circle at 90% 90%, #d9c2ff 0%, transparent 24%),
+        linear-gradient(135deg, #d8f3dc, #e8f8ff, #fff5d6);
+    background-attachment: fixed;
+    min-height: 100vh;
+   }
