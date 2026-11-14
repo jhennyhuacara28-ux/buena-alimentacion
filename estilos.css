@@ -1224,3 +1224,39 @@ section h2 + p {
         gap: 12px;
     }
 }
+/* =====================================================
+   🌱 ESPACIO EN LA PRIMERA SECCIÓN
+   ===================================================== */
+
+/* Separa el título del texto */
+section:first-of-type h2 {
+    margin-bottom: 28px;
+    line-height: 1.35;
+}
+
+/* Hace que el texto respire mejor */
+section:first-of-type p {
+    line-height: 2;
+    margin-bottom: 22px;
+    padding: 0 8px;
+}
+
+/* Más espacio entre los diferentes textos */
+section:first-of-type p + p {
+    margin-top: 18px;
+}
+
+/* En celular */
+@media (max-width: 600px) {
+
+    section:first-of-type h2 {
+        margin-bottom: 24px;
+        line-height: 1.4;
+    }
+
+    section:first-of-type p {
+        line-height: 1.9;
+        margin-bottom: 20px;
+        padding: 0 5px;
+    }
+           }
