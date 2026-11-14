@@ -1382,3 +1382,123 @@ section h2::after {
         transform: translateY(0);
     }
         }
+/* COLORES DE LAS TARJETITAS */
+
+.comida:nth-child(1) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.comida:nth-child(2) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.comida:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.comida:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+.comida:nth-child(5) {
+    background: #f3e5f5;
+    border-color: #c77dff;
+}
+
+
+/* TARJETITAS DE CONSEJOS */
+
+.consejo:nth-child(1) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.consejo:nth-child(2) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.consejo:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.consejo:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+.consejo:nth-child(5) {
+    background: #f3e5f5;
+    border-color: #c77dff;
+}
+
+.consejo:nth-child(6) {
+    background: #fff0f3;
+    border-color: #ff758f;
+}
+
+
+/* TARJETITAS DEL PLATO */
+
+.grupo-alimento:nth-child(1) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.grupo-alimento:nth-child(2) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.grupo-alimento:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.grupo-alimento:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+
+/* TARJETITAS DEL RETO */
+
+.dia-reto:nth-child(1) {
+    background: #fff3cd;
+    border-color: #f9c74f;
+}
+
+.dia-reto:nth-child(2) {
+    background: #d8f3dc;
+    border-color: #52b788;
+}
+
+.dia-reto:nth-child(3) {
+    background: #ffe5d9;
+    border-color: #f9844a;
+}
+
+.dia-reto:nth-child(4) {
+    background: #e0f2fe;
+    border-color: #48cae4;
+}
+
+.dia-reto:nth-child(5) {
+    background: #f3e5f5;
+    border-color: #c77dff;
+}
+
+.dia-reto:nth-child(6) {
+    background: #fff0f3;
+    border-color: #ff758f;
+}
+
+.dia-reto:nth-child(7) {
+    background: #d8f3dc;
+    border-color: #40916c;
+}
