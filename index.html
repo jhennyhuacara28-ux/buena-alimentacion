@@ -1125,7 +1125,85 @@
             flujoCamara = null;
 
         }
+function mostrarInformacionAlimento() {
+    const alimento = document.getElementById("alimento").value;
+    const resultado = document.getElementById("resultado-alimento");
 
+    const datos = {
+        manzana: {
+            nombre: "Manzana",
+            calorias: "52 kcal",
+            proteinas: "0.3 g",
+            carbohidratos: "14 g",
+            grasas: "0.2 g"
+        },
+        platano: {
+            nombre: "Plátano",
+            calorias: "89 kcal",
+            proteinas: "1.1 g",
+            carbohidratos: "23 g",
+            grasas: "0.3 g"
+        },
+        huevo: {
+            nombre: "Huevo",
+            calorias: "78 kcal",
+            proteinas: "6.3 g",
+            carbohidratos: "0.6 g",
+            grasas: "5.3 g"
+        },
+        pollo: {
+            nombre: "Pollo",
+            calorias: "165 kcal",
+            proteinas: "31 g",
+            carbohidratos: "0 g",
+            grasas: "3.6 g"
+        },
+        arroz: {
+            nombre: "Arroz cocido",
+            calorias: "130 kcal",
+            proteinas: "2.7 g",
+            carbohidratos: "28 g",
+            grasas: "0.3 g"
+        },
+        avena: {
+            nombre: "Avena",
+            calorias: "389 kcal",
+            proteinas: "16.9 g",
+            carbohidratos: "66 g",
+            grasas: "6.9 g"
+        },
+        leche: {
+            nombre: "Leche",
+            calorias: "61 kcal",
+            proteinas: "3.2 g",
+            carbohidratos: "4.8 g",
+            grasas: "3.3 g"
+        },
+        verduras: {
+            nombre: "Verduras",
+            calorias: "35 kcal",
+            proteinas: "2 g",
+            carbohidratos: "7 g",
+            grasas: "0.4 g"
+        }
+    };
+
+    if (!alimento) {
+        resultado.innerHTML = "";
+        return;
+    }
+
+    const dato = datos[alimento];
+
+    resultado.innerHTML = `
+        <h3>${dato.nombre}</h3>
+        <p><strong>Calorías:</strong> ${dato.calorias}</p>
+        <p><strong>Proteínas:</strong> ${dato.proteinas}</p>
+        <p><strong>Carbohidratos:</strong> ${dato.carbohidratos}</p>
+        <p><strong>Grasas:</strong> ${dato.grasas}</p>
+        <p>Valores aproximados por una porción estándar.</p>
+    `;
+        }
     </script>
 
 
