@@ -512,6 +512,9 @@ function respuestaIncorrecta() {
             </p>
 
             <strong>3 series × 10 repeticiones</strong>
+            <button class="boton-ejercicio" onclick="abrirEjercicio('sentadillas')">
+    ▶️ Ver ejercicio
+            </button>
         </div>
 
         <!-- MARTES -->
@@ -881,6 +884,56 @@ function cerrarVentana(tipo) {
         document.getElementById("ventana-proteinas").style.display = "none";
     }
 }
+ <!-- VENTANA DEL EJERCICIO: SENTADILLAS -->
+
+<div id="ejercicio-sentadillas" class="ventana">
+
+    <div class="contenido-ventana ejercicio-ventana">
+
+        <button class="cerrar-ventana"
+                onclick="cerrarEjercicio('sentadillas')">
+            ✕
+        </button>
+
+        <h2>🦵 Sentadillas</h2>
+
+        <div class="video-ejercicio">
+            🎥
+            <p>Aquí irá la demostración del movimiento</p>
+        </div>
+
+        <p>
+            Realiza el movimiento lentamente y mantén una postura cómoda.
+        </p>
+
+        <div class="datos-ejercicio">
+            <p><strong>Series:</strong> 3</p>
+            <p><strong>Repeticiones:</strong> 10</p>
+            <p><strong>Descanso:</strong> 30 segundos</p>
+        </div>
+
+        <div class="cronometro" id="cronometro-sentadillas">
+            00:30
+        </div>
+
+        <button class="boton-tarjeta"
+                onclick="iniciarCronometro('sentadillas')">
+            ▶️ Iniciar
+        </button>
+
+        <button class="boton-tarjeta"
+                onclick="pausarCronometro('sentadillas')">
+            ⏸️ Pausar
+        </button>
+
+        <button class="boton-tarjeta"
+                onclick="reiniciarCronometro('sentadillas')">
+            🔄 Reiniciar
+        </button>
+
+    </div>
+
+</div>   
 </script>
 </body>
 </html>
