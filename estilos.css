@@ -1727,3 +1727,314 @@ section {
         padding: 10px !important;
     }
 }
+/* =========================================
+   ADAPTACIÓN FINAL PARA CELULAR Y COMPUTADORA
+   ========================================= */
+
+/* COMPUTADORA */
+@media (min-width: 769px) {
+
+    body {
+        padding: 0 20px;
+    }
+
+    main {
+        width: 92%;
+        max-width: 1100px;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        min-height: 360px !important;
+        padding: 25px !important;
+    }
+
+    .hero h1 {
+        font-size: 44px !important;
+    }
+
+    .hero h2 {
+        font-size: 24px !important;
+    }
+
+    .hero p {
+        font-size: 17px !important;
+    }
+
+    .tarjeta {
+        width: 30%;
+        min-width: 200px;
+        padding: 15px;
+    }
+
+    .tarjeta img {
+        height: 150px !important;
+    }
+
+    .grupo-alimento,
+    .comida {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .consejo {
+        padding: 20px;
+    }
+}
+
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 6px !important;
+        font-size: 14px;
+    }
+
+    main {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 12px auto !important;
+    }
+
+    section {
+        width: 100% !important;
+        padding: 16px 12px !important;
+        margin-bottom: 15px !important;
+        border-radius: 12px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 6px !important;
+    }
+
+    .logo {
+        font-size: 17px !important;
+    }
+
+    .menu {
+        gap: 3px !important;
+    }
+
+    .menu a {
+        font-size: 12px !important;
+        padding: 6px 8px !important;
+    }
+
+    /* PORTADA */
+    .hero {
+        min-height: 270px !important;
+        padding: 15px 8px !important;
+    }
+
+    .hero-contenido {
+        width: 92% !important;
+        max-width: 450px !important;
+        padding: 15px !important;
+    }
+
+    .hero h1 {
+        font-size: 26px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .hero h2 {
+        font-size: 18px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .hero p {
+        font-size: 13px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .boton {
+        font-size: 13px !important;
+        padding: 9px 16px !important;
+    }
+
+    /* TÍTULOS */
+    h2,
+    section h2,
+    .quiz h2,
+    .plato-saludable h2,
+    .menu-saludable h2,
+    .consejos h2 {
+        font-size: 21px !important;
+        margin-bottom: 10px !important;
+    }
+
+    h3 {
+        font-size: 17px !important;
+    }
+
+    p,
+    li {
+        font-size: 13px !important;
+    }
+
+    /* TARJETAS */
+    .tarjetas {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .tarjeta {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        padding: 12px !important;
+    }
+
+    .tarjeta img {
+        width: 100% !important;
+        height: 130px !important;
+        object-fit: cover !important;
+    }
+
+    /* PLATO SALUDABLE */
+    .plato-saludable,
+    .menu-saludable,
+    .consejos {
+        padding: 20px 12px !important;
+    }
+
+    .plato-contenedor,
+    .menu-contenedor,
+    .consejos-contenedor {
+        width: 100% !important;
+        gap: 12px !important;
+    }
+
+    .grupo-alimento,
+    .comida,
+    .consejo {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+    }
+
+    .icono-alimento {
+        font-size: 40px !important;
+    }
+
+    .comida-icono {
+        font-size: 38px !important;
+    }
+
+    .comida h3 {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .consejo span {
+        font-size: 38px !important;
+    }
+
+    .consejo h3 {
+        font-size: 17px !important;
+    }
+
+    /* QUIZ */
+    .quiz {
+        width: 100% !important;
+        margin: 15px auto !important;
+        padding: 20px 12px !important;
+        border-radius: 15px;
+    }
+
+    .pregunta {
+        padding: 15px !important;
+    }
+
+    .pregunta button {
+        width: 100% !important;
+        padding: 10px !important;
+        font-size: 13px !important;
+    }
+
+    /* SOBRE EL PROYECTO */
+    .sobre-proyecto {
+        padding: 20px 12px !important;
+    }
+
+    .sobre-contenido {
+        padding: 20px 15px !important;
+        gap: 15px !important;
+    }
+
+    .sobre-icono {
+        font-size: 55px !important;
+    }
+
+    .sobre-contenido h2 {
+        font-size: 21px !important;
+    }
+
+    /* PIE DE PÁGINA */
+    .footer {
+        padding: 25px 12px 15px !important;
+        margin-top: 20px !important;
+    }
+
+    .footer h2 {
+        font-size: 21px !important;
+    }
+
+    .autor {
+        font-size: 18px !important;
+    }
+
+    .datos-autor {
+        font-size: 13px !important;
+    }
+}
+
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 400px) {
+
+    body {
+        padding: 0 4px !important;
+    }
+
+    section {
+        padding: 14px 10px !important;
+    }
+
+    .hero {
+        min-height: 240px !important;
+    }
+
+    .hero-contenido {
+        width: 95% !important;
+        padding: 12px !important;
+    }
+
+    .hero h1 {
+        font-size: 23px !important;
+    }
+
+    .hero h2 {
+        font-size: 16px !important;
+    }
+
+    .hero p {
+        font-size: 12px !important;
+    }
+
+    .tarjeta img {
+        height: 115px !important;
+    }
+            }
