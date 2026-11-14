@@ -1348,3 +1348,49 @@ footer {
         padding: 8px;
     }
    }
+/* =====================================================
+   📐 MARGEN REAL PARA EL CONTENIDO COMPLETO
+   ===================================================== */
+
+main {
+    width: calc(100% - 30px);
+    max-width: 1150px;
+    margin: 25px auto;
+}
+
+/* Cada bloque de contenido queda separado */
+main section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Espacio interior para que el texto no quede pegado */
+main section {
+    padding: 28px;
+}
+
+/* 📱 En celular */
+@media (max-width: 600px) {
+
+    main {
+        width: calc(100% - 20px);
+        margin: 18px auto;
+    }
+
+    main section {
+        padding: 20px 16px;
+    }
+}
+
+/* 📱 Celulares pequeños */
+@media (max-width: 380px) {
+
+    main {
+        width: calc(100% - 16px);
+    }
+
+    main section {
+        padding: 18px 14px;
+    }
+       }
