@@ -1661,3 +1661,14 @@ section h2::after {
     background: #d8f3dc;
     border-color: #52b788;
     }
+/* IMÁGENES PEQUEÑAS DENTRO DE LAS VENTANAS */
+
+.contenido-ventana img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 15px;
+    border: 3px solid #d8f3dc;
+    }
