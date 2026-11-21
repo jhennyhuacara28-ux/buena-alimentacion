@@ -1768,3 +1768,40 @@ section h2::after {
     border: none;
     border-radius: 16px;
 }
+.tabla-imc-seccion {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff8e1;
+}
+
+.tabla-imc-seccion h2 {
+    color: #1b4332;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.imagen-tabla-imc {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    overflow-x: auto;
+}
+
+.imagen-tabla-imc img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.nota-imc {
+    max-width: 800px;
+    margin: 15px auto 0;
+    color: #264653;
+    line-height: 1.6;
+    }
